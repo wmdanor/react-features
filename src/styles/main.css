@@ -1,0 +1,64 @@
+:root {
+  --bg-primary: white;
+  --bg-secondary: white;
+  --bg-inverse: black;
+  --border-primary: black;
+  --text-color-primary: black;
+  --caret-color: inherit;
+}
+
+@media (prefers-color-scheme: darkl) {
+  :root {
+    --bg-primary: black;
+    --bg-secondary: #282828;
+    --bg-inverse: white;
+    --border-primary: white;
+    --text-color-primary: white;
+    --caret-color: white;
+  }
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-color-primary);
+  caret-color: var(--caret-color);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}

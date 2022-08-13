@@ -1,0 +1,5 @@
+.list-item {
+  width: 400px;
+  border: 1px solid var(--border-primary);
+  padding: 8px;
+}
